@@ -4,11 +4,18 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
+    "axios": "^0.27.2",
+    "coderwhy": "^1.1.4",
     "core-js": "^3.8.3",
+    "element-plus": "^2.2.14",
+    "normalize.css": "^8.0.1",
     "vue": "^3.2.13",
+    "vue-resource": "^1.5.3",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },
@@ -20,6 +27,8 @@
     "@vue/cli-service": "~5.0.0",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
-    "typescript": "~4.5.5"
+    "prettier": "^2.7.1",
+    "typescript": "~4.5.5",
+    "vite": "^3.0.8"
   }
 }

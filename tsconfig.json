@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "esnext",//目标代码=>js(es5/6/7)
+    "module": "esnext",//目标代码需要使用的模块化方案
     "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",//是否对jsx进行怎么样的处理，保留原来的格式
+    "moduleResolution": "node",//按照node的方式去解析模块
+    "skipLibCheck": true,//跳过对一些库的类型检测（axios）
+
+    "esModuleInterop": true,//允许es模式使用
+    "allowSyntheticDefaultImports": true,//允许commonjs模式使用
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
-    "sourceMap": true,
-    "baseUrl": ".",
+    "sourceMap": true,//生成映射文件
+    "baseUrl": ".",//文件路径在解析时，基本url
     "types": [
       "webpack-env"
     ],
@@ -25,7 +26,7 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ]//可以使用哪些库
   },
   "include": [
     "src/**/*.ts",
