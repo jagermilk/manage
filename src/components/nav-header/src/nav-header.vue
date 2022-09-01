@@ -5,7 +5,7 @@
     </el-icon>
     <div class="conetent">
       <div>
-        <NavBread></NavBread>
+        <HyBreadcrumb :breadcrumbs="breadcrumbs"></HyBreadcrumb>
       </div>
       <div style="cursor:pointer" >
           <el-dropdown :hide-on-click="false">
@@ -30,7 +30,10 @@ import { emit } from 'process'
 import { defineComponent, ref, computed, Ref, ComputedRef } from 'vue'
 import { ArrowDown } from '@element-plus/icons-vue'
 import {useStore} from '@/store/main'
-import NavBread from './nav-bread.vue'
+import HyBreadcrumb,{IBreadcrumb} from '@/base-ui/breadcrumb'
+import {pathMapBread} from '@/utils/map-menus'
+import {useRoute} from 'vue-router'
+
 export default defineComponent({
     emits: ["changenav"],
     setup(props, { emit }) {
@@ -43,13 +46,26 @@ export default defineComponent({
             emit("changenav", iscollpase.value);
             console.log(iscollpase);
         };
+
+        //面包屑
+        
+        
+        
+        const breadcrumbs=computed(()=>{
+          const route=useRoute()
+          const userMenu=store.state.loginmudule.userMenu
+          const currentPath=route.path
+          return pathMapBread(userMenu,currentPath)
+          
+        } )
         return {
             iscollpase,
             changenav,
-            username
+            username,
+            breadcrumbs
         };
     },
-    components: { NavBread }
+    components: { HyBreadcrumb }
 })
 </script>
 
