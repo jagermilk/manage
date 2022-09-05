@@ -3,7 +3,7 @@ import Login from "../views/Login.vue"
 import Main from '../views/main/Main.vue'
 import LocalCache from '@/utils/cache'
 import {mapMenuToRoutes} from '@/utils/map-menus'
-import  store  from '@/store/main/index'
+import  {store}  from '@/store/main/index'
 import {firstmenu} from '@/utils/map-menus'
 const routes: Array<RouteRecordRaw> = [
 	{

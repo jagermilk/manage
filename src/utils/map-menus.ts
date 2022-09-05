@@ -23,7 +23,7 @@ export function mapMenuToRoutes(userMenus:any[]):RouteRecordRaw[]{
                 }
                 if(!firstmenu){
                     firstmenu=route
-                    console.log(firstmenu);
+                    
                     
                 }
             }
@@ -39,7 +39,6 @@ export function mapMenuToRoutes(userMenus:any[]):RouteRecordRaw[]{
 export function pathMapBread(userMenus:any[],currentPath:string){
     const breadcrumbs:IBreadcrumb[]=[]
     pathMapToMenu(userMenus,currentPath,breadcrumbs)
-    console.log(breadcrumbs);
     return breadcrumbs
 }
 export function pathMapToMenu(userMenus:any[],currentPath:string,breadcrumbs?:IBreadcrumb[]):any{
@@ -52,7 +51,7 @@ export function pathMapToMenu(userMenus:any[],currentPath:string,breadcrumbs?:IB
                 return findMenu              
             }
         }else if(menu.type===2&&menu.url===currentPath){
-            console.log(menu);
+            
             return menu
         }
     }

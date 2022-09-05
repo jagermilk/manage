@@ -62,7 +62,7 @@ class HYRequest {
 		return new Promise((resolve, reject) => {
 			this.instance
 				.request<any, T>(config)
-				.then((res) => {
+				.then((res) => {	
 					resolve(res as unknown as Promise<T>)
 				})
 				.catch((err) => {

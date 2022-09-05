@@ -2,7 +2,7 @@ import { createApp } from "vue"
 import App from "./App.vue"
 import router from "./router"
 import {setupStore} from './store/main'
-import store from "./store/main"
+import {store} from "./store/main"
 import {register} from "./global"
 import hyRequest from "./service/index"
 import './assets/css/index.css'

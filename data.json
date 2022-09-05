@@ -40,80 +40,106 @@
 			"departmentId": "1",
 			"menu": [
 				{
-					"roleId":"1",
+					"roleId": "1",
 					"name": "运营2",
-					"icon":"View",
+					"icon": "View",
 					"intro": "日常管理2",
 					"muenList": [
-						{"name": "系统管理",
-						"type": 1,
-						"url": "/main/system",
-						"icon":"Setting",
-						"sort": 105,
-						"parentId": 8,
-						"children":[{"name": "部门管理",
-						"id":1,
-						"type": 2,
-						"icon":"Setting",
-						"url": "/main/system/department",
-						"sort": 105
-						},{"name": "菜单管理",
-						"id":2,
-						"type": 2,
-						"icon":"Setting",
-						"url": "/main/system/menu",
-						"sort": 105},{"name": "角色管理",
-						"id":3,
-						"type": 2,
-						"icon":"Setting",
-						"url": "/main/system/role",
-						"sort": 105},{"name": "用户管理",
-						"id":4,
-						"type": 2,
-						"icon":"Setting",
-						"url": "/main/system/user",
-						"sort": 105}]
+						{
+							"name": "系统管理",
+							"type": 1,
+							"url": "/main/system",
+							"icon": "Setting",
+							"sort": 105,
+							"parentId": 8,
+							"children": [
+								{
+									"name": "部门管理",
+									"id": 1,
+									"type": 2,
+									"icon": "Setting",
+									"url": "/main/system/department",
+									"sort": 105
+								},
+								{
+									"name": "菜单管理",
+									"id": 2,
+									"type": 2,
+									"icon": "Setting",
+									"url": "/main/system/menu",
+									"sort": 105
+								},
+								{
+									"name": "角色管理",
+									"id": 3,
+									"type": 2,
+									"icon": "Setting",
+									"url": "/main/system/role",
+									"sort": 105
+								},
+								{
+									"name": "用户管理",
+									"id": 4,
+									"type": 2,
+									"icon": "Setting",
+									"url": "/main/system/user",
+									"sort": 105
+								}
+							]
 						},
-						{"name": "商品中心",
-						
-						"type": 1,
-						"url": "/main/product",
-						"sort": 106,
-						"icon":"ShoppingCart",
-						"parentId": 7,
-						"children":[{"name": "商品类别",
-						"id":5,
-						"type": 2,
-						"url": "/main/product/category",
-						"sort": 106
-						},{"name": "商品信息",
-						"id":6,
-						"type": 2,
-						"url": "/main/product/goods",
-						"sort": 106}]
+						{
+							"name": "商品中心",
+
+							"type": 1,
+							"url": "/main/product",
+							"sort": 106,
+							"icon": "ShoppingCart",
+							"parentId": 7,
+							"children": [
+								{
+									"name": "商品类别",
+									"id": 5,
+									"type": 2,
+									"url": "/main/product/category",
+									"sort": 106
+								},
+								{
+									"name": "商品信息",
+									"id": 6,
+									"type": 2,
+									"url": "/main/product/goods",
+									"sort": 106
+								}
+							]
 						},
-						{"name": "随便聊聊",
-						"id":7,
-						"type": 1,
-						"url": "/main/story",
-						"icon":"Sunny",
-						"sort": 107,
-						"parentId": 6,
-						"children":[{"name": "你的故事",
-						"id":8,
-						"type": 2,
-						"url": "/main/story/chat",
-						"sort": 107
-						},{"name": "故事列表",
-						"id":9,
-						"type": 2,
-						"url": "/main/story/list",
-						"sort": 107}]
+						{
+							"name": "随便聊聊",
+							"id": 7,
+							"type": 1,
+							"url": "/main/story",
+							"icon": "Sunny",
+							"sort": 107,
+							"parentId": 6,
+							"children": [
+								{
+									"name": "你的故事",
+									"id": 8,
+									"type": 2,
+									"url": "/main/story/chat",
+									"sort": 107
+								},
+								{
+									"name": "故事列表",
+									"id": 9,
+									"type": 2,
+									"url": "/main/story/list",
+									"sort": 107
+								}
+							]
 						}
 					]
 				}
 			]
-			
 		},
 		{
 			"id": "2",
@@ -123,82 +149,133 @@
 			"departmentId": "2",
 			"menu": [
 				{
-					"roleId":"1",
+					"roleId": "1",
 					"name": "运营2",
-					"icon":"View",
+					"icon": "View",
 					"intro": "日常管理2",
 					"muenList": [
-						{"name": "系统总览",
-						"type": 1,
-						"url": "/main/analysis",
-						"sort": 104,
-						"parentId": 9,
-						"icon":"View",
-						"children":[{"name": "系统面板",
-						"type": 2,
-						"url": "/main/analysis/dashboard",
-						"sort": 104
-						},{"name": "系统总览",
-						"type": 2,
-						"url": "/main/analysis/overview",
-						"sort": 104}]
+						{
+							"name": "系统总览",
+							"type": 1,
+							"url": "/main/analysis",
+							"sort": 104,
+							"parentId": 9,
+							"icon": "View",
+							"children": [
+								{
+									"name": "系统面板",
+									"type": 2,
+									"url": "/main/analysis/dashboard",
+									"sort": 104
+								},
+								{
+									"name": "系统总览",
+									"type": 2,
+									"url": "/main/analysis/overview",
+									"sort": 104
+								}
+							]
 						},
-						{"name": "系统管理",
-						"type": 1,
-						"url": "/main/system",
-						"icon":"Setting",
-						"sort": 105,
-						"parentId": 8,
-						"children":[{"name": "部门管理",
-						"type": 2,
-						"url": "/main/system/department",
-						"sort": 105
-						},{"name": "菜单管理",
-						"type": 2,
-						"url": "/main/system/menu",
-						"sort": 105},{"name": "角色管理",
-						"type": 2,
-						"url": "/main/system/role",
-						"sort": 105},{"name": "用户管理",
-						"type": 2,
-						"url": "/main/system/user",
-						"sort": 105}]
+						{
+							"name": "系统管理",
+							"type": 1,
+							"url": "/main/system",
+							"icon": "Setting",
+							"sort": 105,
+							"parentId": 8,
+							"children": [
+								{
+									"name": "部门管理",
+									"type": 2,
+									"url": "/main/system/department",
+									"sort": 105
+								},
+								{
+									"name": "菜单管理",
+									"type": 2,
+									"url": "/main/system/menu",
+									"sort": 105
+								},
+								{
+									"name": "角色管理",
+									"type": 2,
+									"url": "/main/system/role",
+									"sort": 105
+								},
+								{
+									"name": "用户管理",
+									"type": 2,
+									"url": "/main/system/user",
+									"sort": 105
+								}
+							]
 						},
-						{"name": "商品中心",
-						"type": 1,
-						"url": "/main/product",
-						"sort": 106,
-						"icon":"ShoppingCart",
-						"parentId": 7,
-						"children":[{"name": "商品类别",
-						"type": 2,
-						"url": "/main/product/category",
-						"sort": 106
-						},{"name": "商品信息",
-						"type": 2,
-						"url": "/main/product/goods",
-						"sort": 106}]
+						{
+							"name": "商品中心",
+							"type": 1,
+							"url": "/main/product",
+							"sort": 106,
+							"icon": "ShoppingCart",
+							"parentId": 7,
+							"children": [
+								{
+									"name": "商品类别",
+									"type": 2,
+									"url": "/main/product/category",
+									"sort": 106
+								},
+								{
+									"name": "商品信息",
+									"type": 2,
+									"url": "/main/product/goods",
+									"sort": 106
+								}
+							]
 						},
-						{"name": "随便聊聊",
-						"type": 1,
-						"url": "/main/story",
-						"icon":"Sunny",
-						"sort": 107,
-						"parentId": 6,
-						"children":[{"name": "你的故事",
-						"type": 2,
-						"url": "/main/story/chat",
-						"sort": 107
-						},{"name": "故事列表",
-						"type": 2,
-						"url": "/main/story/list",
-						"sort": 107}]
+						{
+							"name": "随便聊聊",
+							"type": 1,
+							"url": "/main/story",
+							"icon": "Sunny",
+							"sort": 107,
+							"parentId": 6,
+							"children": [
+								{
+									"name": "你的故事",
+									"type": 2,
+									"url": "/main/story/chat",
+									"sort": 107
+								},
+								{
+									"name": "故事列表",
+									"type": 2,
+									"url": "/main/story/list",
+									"sort": 107
+								}
+							]
 						}
 					]
 				}
 			]
-			
 		}
+	],
+	"userlist": [
+		 [{
+				"id": "1",
+				"name": "jagermilk",
+				"realname": "jagermilk",
+				"cellphone": "188234567",
+				"departmentId": "1",
+				"roleId": "1"
+			},
+			{
+				"id": "2",
+				"name": "xuraodan",
+				"realname": "xuraodan",
+				"cellphone": "182030421",
+				"departmentId": "2",
+				"roleId": "2"
+			}]
 		
 	]
 }
