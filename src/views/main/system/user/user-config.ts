@@ -12,32 +12,38 @@ export const formConfig:IForm={
         xs:24
     },
     formItems:[{
+      field:'name',
         type:'input',
         label:'用户名',
         rules:[],
         placeholder:'请输入用户名'
       },{
+        field:'age',
         type:'input',
         label:'年龄',
         rules:[],
         placeholder:'请输入年龄'
       },{
+        field:'place',
         type:'input',
         label:'籍贯',
         rules:[],
         placeholder:'请输入籍贯'
       },{
+        field:'passwords',
         type:'input',
         label:'密码',
         rules:[],
         placeholder:'请输入密码'
       },{
+        field:'sports',
         type:'select',
         label:'喜欢的运动',
         rules:[],
         placeholder:'请输入喜欢的运动',
         options:[{title:'羽毛球',value:'volleyball'},{title:'足球',value:'football'}]
       },{
+        field:'creatTime',
         type:'timepicker',
         label:'创建时间',
         rules:[],
