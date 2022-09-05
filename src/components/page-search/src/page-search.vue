@@ -9,7 +9,7 @@
                     <button primary>
                         <el-icon><Search /></el-icon>
                         搜索</button>
-                    <button type="primary">
+                    <button primary>
                         <el-icon><Loading /></el-icon>
                         重置</button>
                 </div>
@@ -18,8 +18,8 @@
     </div>
 </template>
 
-<script>
-import { formConfig } from '@/views/main/system/user/user-config.ts'
+<script lang="ts">
+import { formConfig } from '@/views/main/system/user/user-config'
 import Hyform from '@/base-ui/form';
 import { ref } from 'vue'
 export default {
