@@ -1,33 +1,21 @@
 <template>
   <div class="user">
-    <Hyform :="formConfig" v-model="formData"></Hyform>
+    <PageSearch></PageSearch>
     <div class="content"></div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent,ref } from 'vue'
-import Hyform from '@/base-ui/form';
-import {formConfig} from './user-config'
+import { defineComponent } from 'vue'
+import PageSearch from '@/components/page-search/index'
+
+
+
 export default defineComponent({
-  name: 'user',
-  components:{
-      Hyform
+    name: "user",
+    setup() {
     },
-  setup() {
-    const formData=ref({
-      name:'',
-      age:'',
-      place:'',
-      passwords:'',
-      sports:'',
-      creatTime:''
-    })
-    return {
-      formConfig,
-      formData
-    }
-  }
+    components: { PageSearch }
 })
 </script>
 

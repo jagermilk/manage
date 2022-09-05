@@ -1,5 +1,6 @@
 <template>
     <div class="search">
+        <slot name="header"></slot>
         <el-form :label-width="labelWidth">
             <el-row>
                 <template v-for="item in formItems" :key="item.label">
@@ -22,6 +23,7 @@
             </el-row>
             
         </el-form>
+        <slot name="footer"></slot>
     </div>
 </template>
 
@@ -58,10 +60,13 @@ export default {
         required:true
     }
     },
-    emits:['updata:modelValue'],
+    emits:['update:modelValue'],
     setup(props:any,{emit}:any){
         const formData=ref({...props.modelValue})
-        watch(formData,(newValue)=>emit('updata:modelValue',newValue),{deep:true})
+        watch(formData,
+        (newValue)=>emit('update:modelValue',newValue),
+        {deep:true}
+        )
         return{
             formData
         }
