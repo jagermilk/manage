@@ -19,10 +19,15 @@
 </template>
 
 <script lang="ts">
-import { formConfig } from '@/views/main/system/user/user-config'
+
 import Hyform from '@/base-ui/form';
 import { ref } from 'vue'
 export default {
+    props:{
+        formConfig:{
+            type:Object
+        }
+    },
     components: {
         Hyform
     },
@@ -37,13 +42,17 @@ export default {
         })
         return {
             formData,
-            formConfig
+            
         }
     }
 }
 </script>
 
 <style lang="less" scoped>
+    .search{
+        background-color: white;
+        margin: 10px;
+    }
     .footer{
         display: flex;
         flex-direction: row;

@@ -3,15 +3,16 @@ import App from "./App.vue"
 import router from "./router"
 import {setupStore} from './store/main'
 import {store} from "./store/main"
-import {register} from "./global"
 import hyRequest from "./service/index"
 import './assets/css/index.css'
 import 'normalize.css'
+import {globalRegister} from '@/global/index'
 
 
 const app=createApp(App)
-app.use(register)
+
 app.use(store)
+app.use(globalRegister)
 setupStore()
 app.use(router)
 app.mount("#app")

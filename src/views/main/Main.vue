@@ -55,9 +55,11 @@ export default {
     padding:20px;
 }
 .el-main{
+    padding:0px;
     .pageinfo{
-        background-color: rgb(243, 240, 240);
-        border-radius: 5px;
+        padding:1px;
+        background-color: rgb(242, 242, 242);
+        border-radius: 10px;
     }
 }
 
