@@ -265,7 +265,9 @@
 				"name": "jagermilk",
 				"realname": "jagermilk",
 				"cellphone": "188234567",
+				"status":1,
 				"departmentId": "1",
+				"settime":"2014-1-1",
 				"roleId": "1"
 			},
 			{
@@ -273,7 +275,9 @@
 				"name": "xuraodan",
 				"realname": "xuraodan",
 				"cellphone": "182030421",
+				"status":1,
 				"departmentId": "2",
+				"settime":"2014-1-1",
 				"roleId": "2"
 			}]
 		

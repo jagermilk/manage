@@ -38,6 +38,7 @@ import {
 	ElCol,
 	ElBreadcrumb,
 	ElBreadcrumbItem,
+	ElTableColumn,
 } from "element-plus"
 const components = [
 	ElButton,
@@ -77,7 +78,9 @@ const components = [
 	ElTimePicker,
 	ElCol,
 	ElBreadcrumb,
-	ElBreadcrumbItem
+	ElBreadcrumbItem,
+	ElTable,
+	ElTableColumn
 ]
 
 export function register(app:any){

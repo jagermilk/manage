@@ -1,14 +1,16 @@
 <template>
   <div class="user">
     <PageSearch></PageSearch>
+    <PageTable></PageTable>
     <div class="content"></div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent,computed } from 'vue'
 import PageSearch from '@/components/page-search/index'
 import { useStore } from 'vuex'
+import PageTable from '@/components/page-table/src/page-table.vue'
 
 
 export default defineComponent({
@@ -22,8 +24,9 @@ export default defineComponent({
           name:''
         }
       })
+        
     },
-    components: { PageSearch }
+    components: { PageSearch, PageTable }
 })
 </script>
 
