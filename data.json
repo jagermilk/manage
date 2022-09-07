@@ -286,23 +286,18 @@
 		[{
 			   "id": "1",
 			   "name": "jagermilk",
-			   "realname": "jagermilk",
-			   "cellphone": "188234567",
-			   "status":1,
-			   "departmentId": "1",
+			   "intro":"超级管理员",
 			   "settime":"2014-1-1 12:00",
-			   "roleId": "1"
+			   "updatetime":"2018-1-1 12:00"
 		   },
 		   {
-			   "id": "2",
-			   "name": "xuraodan",
-			   "realname": "xuraodan",
-			   "cellphone": "182030421",
-			   "status":1,
-			   "departmentId": "2",
-			   "settime":"2014-1-1 15:00",
-			   "roleId": "2"
-		   }]
+			"id": "2",
+			"name": "xuraodan",
+			"intro":"管理员",
+			"settime":"2014-1-1 12:00",
+			"updatetime":"2018-1-1 12:00"
+		}
+		   ]
 	   
    ]
 }

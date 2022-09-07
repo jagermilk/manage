@@ -19,6 +19,9 @@
 					>{{ scope.row.status ? "启用" : "禁用" }}</el-button
 				>
 			</template>
+			<template #updatetime="scope">
+				<strong>{{ $filters.formatTime(scope.row.updatetime) }}</strong>
+			</template>
 			<template #settime="scope">
 				<strong>{{ $filters.formatTime(scope.row.settime) }}</strong>
 			</template>
