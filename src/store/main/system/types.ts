@@ -1,4 +1,6 @@
 export interface IList {
 	userlist:Array<object>
-	usertotal:number
+	usertotal:number,
+	rolelist:Array<object>,
+	roletotal:number,
 }

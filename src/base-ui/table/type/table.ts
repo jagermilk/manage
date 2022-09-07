@@ -12,5 +12,6 @@ export interface ITable {
 	itemStyle?: any
 	showIndexColumn:boolean
 	showSelect:boolean
-	title?:string
+	title?:string,
+	dataname:string
 }

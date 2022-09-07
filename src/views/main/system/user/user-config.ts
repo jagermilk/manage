@@ -106,5 +106,6 @@ export const tableConfig: ITable = {
 	],
 	showIndexColumn:true,
 	showSelect:true,
-	title:'用户列表'
+	title:'用户列表',
+	dataname:'user'
 }
