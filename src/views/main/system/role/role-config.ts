@@ -81,5 +81,6 @@ export const tableConfig: ITable = {
 	showIndexColumn:true,
 	showSelect:true,
 	title:'角色列表',
-	dataname:'role'
+	dataname:'role',
+	dataNumber:5
 }

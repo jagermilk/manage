@@ -6,6 +6,7 @@ export interface ITableItem {
 	
 }
 export interface ITable {
+	dataNumber: number
 	tableItems: ITableItem[]
 	labelWidth?: string
 	colLayout?: any
@@ -13,5 +14,6 @@ export interface ITable {
 	showIndexColumn:boolean
 	showSelect:boolean
 	title?:string,
-	dataname:string
+	dataname?:string,
+	
 }

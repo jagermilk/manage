@@ -16,40 +16,40 @@ export const formConfig: IForm = {
 		{
 			field: "name",
 			type: "input",
-			label: "用户名",
+			label: "昵称",
 			rules: [],
-			placeholder: "请输入用户名"
+			placeholder: "请输入昵称"
 		},
 		{
-			field: "age",
+			field: "realname",
 			type: "input",
-			label: "年龄",
+			label: "真实姓名",
 			rules: [],
-			placeholder: "请输入年龄"
+			placeholder: "请输入真实姓名"
 		},
 		{
-			field: "place",
+			field: "role",
 			type: "input",
-			label: "籍贯",
+			label: "角色",
 			rules: [],
-			placeholder: "请输入籍贯"
+			placeholder: "请输入角色"
 		},
 		{
-			field: "passwords",
+			field: "cellphone",
 			type: "input",
-			label: "密码",
+			label: "电话",
 			rules: [],
-			placeholder: "请输入密码"
+			placeholder: "请输入电话"
 		},
 		{
-			field: "sports",
+			field: "department",
 			type: "select",
-			label: "喜欢的运动",
+			label: "部门",
 			rules: [],
-			placeholder: "请输入喜欢的运动",
+			placeholder: "请选择部门",
 			options: [
-				{ title: "羽毛球", value: "volleyball" },
-				{ title: "足球", value: "football" }
+				{ title: "1", value: "1" },
+				{ title: "2", value: "2" }
 			]
 		},
 		{
@@ -61,7 +61,7 @@ export const formConfig: IForm = {
 		}
 	]
 }
-export const tableConfig: ITable = {
+export const tableConfig:ITable = {
 	tableItems: [
 		{
 			prop: "name",
@@ -107,5 +107,6 @@ export const tableConfig: ITable = {
 	showIndexColumn:true,
 	showSelect:true,
 	title:'用户列表',
-	dataname:'user'
+	dataname:'user',
+	dataNumber:5
 }

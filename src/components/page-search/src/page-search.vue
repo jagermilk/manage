@@ -6,10 +6,10 @@
             </template>
             <template #footer>
                 <div class="footer">
-                    <button primary>
+                    <button primary @click="handleResearchClick">
                         <el-icon><Search /></el-icon>
                         搜索</button>
-                    <button primary>
+                    <button primary @click="handleResetClick">
                         <el-icon><Loading /></el-icon>
                         重置</button>
                 </div>
@@ -31,19 +31,31 @@ export default {
     components: {
         Hyform
     },
-    setup() {
-        const formData = ref({
-            name: '',
-            age: '',
-            place: '',
-            passwords: '',
-            sports: '',
-            creatTime: ''
-        })
+    emits:['resetBtnClick','queryBtnClick'],
+    setup(props:any,{emit}:any) {
+        const formItems = props.formConfig?.formItems ?? []
+        const formOriginData:any={}
+        for(const item of formItems){
+            formOriginData[item.field]=''
+        }
+        const formData=ref(formOriginData)
+        //优化二 监听重置按钮
+        const handleResetClick=()=>{
+            formData.value=formOriginData
+            emit('resetBtnClick')
+        }
+        //优化三 搜索按钮的点击
+        const handleResearchClick=()=>{
+            emit('queryBtnClick',JSON.parse(JSON.stringify(formData.value)))
+
+}
         return {
             formData,
-            
+            handleResetClick,
+            handleResearchClick
         }
+        
+
     }
 }
 </script>

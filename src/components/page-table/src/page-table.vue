@@ -20,10 +20,10 @@
 				>
 			</template>
 			<template #updatetime="scope">
-				<strong>{{ $filters.formatTime(scope.row.updatetime) }}</strong>
+				<strong>{{$filters.formatTime(scope.row.updatetime) }}</strong>
 			</template>
 			<template #settime="scope">
-				<strong>{{ $filters.formatTime(scope.row.settime) }}</strong>
+				<strong>{{$filters.formatTime(scope.row.settime) }}</strong>
 			</template>
 			<template #operate>
 				<el-button icon="Edit" size="small">修改</el-button>
@@ -34,12 +34,11 @@
 </template>
 
 <script lang="ts">
-import { computed } from "vue"
+import { computed,defineComponent } from "vue"
 import Table from "@/base-ui/table/src/table.vue"
 import { useStore } from "vuex"
-import { log } from "console"
 import Pagination from "../../../base-ui/pagination/src/pagination.vue"
-export default {
+export default defineComponent({
 	components: { Table, Pagination },
 	props: {
 		tableConfig: {
@@ -50,10 +49,8 @@ export default {
 		const store = useStore()
 		const modulename = props.tableConfig.dataname
 		let result: any = ["1", "2"]
-		
 		const tabledata = computed(() => {
 			console.log(modulename)
-
 			switch (modulename) {
 				case "user":
 					result = JSON.parse(JSON.stringify(store.state.getsystem.userlist))
@@ -67,22 +64,23 @@ export default {
 			}
 			return result[0]
 		})
-		store.dispatch("getsystem/getlist", {
+		const getPageData=(value?:any)=>{
+			store.dispatch("getsystem/getlist", {
 			dataname: modulename,
-			params: {
-				id: "",
-				name: ""
-			}
+			params: value
 		})
+		}
+		getPageData()
 		const selectionchange = (value: any) => {
 			console.log(value)
 		}
 		return {
 			selectionchange,
-			tabledata
+			tabledata,
+			getPageData
 		}
 	}
-}
+})
 </script>
 
 <style lang="less" scoped>

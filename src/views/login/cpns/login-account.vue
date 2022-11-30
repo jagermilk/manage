@@ -22,7 +22,6 @@ import { useStore } from 'vuex'
 
 export default defineComponent({
   setup() {
-    
     const store = useStore()
     const account1 = reactive({
       name: LocalCache.getCache('name') ?? '',

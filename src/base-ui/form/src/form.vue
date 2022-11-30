@@ -63,6 +63,7 @@ export default {
     emits:['update:modelValue'],
     setup(props:any,{emit}:any){
         const formData=ref({...props.modelValue})
+        watch(()=>props.modelValue,(newValue)=>formData.value={...newValue})
         watch(formData,
         (newValue)=>emit('update:modelValue',newValue),
         {deep:true}

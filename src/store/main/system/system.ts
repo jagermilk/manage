@@ -45,6 +45,7 @@ export const getsystem: Module<IList, IRootState> = {
 			}
 			const pagelist = await getlistRequest({ url, params })
 			console.log(pagelist)
+			
 			switch (dataname) {
 				case "user":
 					commit("changeuserlist", pagelist)
@@ -53,8 +54,9 @@ export const getsystem: Module<IList, IRootState> = {
 				case "role":
 					commit("changerolelist", pagelist)
 					commit("changeroletotal", pagelist.length + 1)
-					break
+					break					
 			}
+			return pagelist
 		}
 	}
 }
